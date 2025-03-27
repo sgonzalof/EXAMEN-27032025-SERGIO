@@ -12,6 +12,13 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.table.DefaultTableModel;
 
+import sooper.demo.tkrun.ArticulosEmbolsarController;
+import sooper.demo.tkrun.ArticulosEmbolsarModel;
+//import sooper.demo.run.ReturnController;
+//import library.demo.run.ReturnModel;
+//import library.demo.run.ReturnView;
+
+
 public class SupermercadoView {
 
 	protected JFrame frmSupermercado;
@@ -24,6 +31,8 @@ public class SupermercadoView {
 	private SupermercadoController controller;
 	private DefaultTableModel modeloArticulo;
 	private DefaultTableModel modeloListaEmbolsados;
+	private ArticulosEmbolsarController c;
+	private ArticulosEmbolsarModel modArtEmb;
 
 	
 
@@ -92,6 +101,25 @@ public class SupermercadoView {
 		scrollPane_1.setViewportView(tablaEmbolsados);
 		
 		btnEnvioAlmacen = new JButton("Enviar a almacén");
+		btnEnvioAlmacen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				
+
+	
+				
+				
+				
+				ArticulosEmbolsarModel modArtEmb = new ArticulosEmbolsarModel();
+				ArticulosEmbolsarController conArtEmb = new ArticulosEmbolsarController(modArtEmb);
+				ArticulosEmbolsarView artEmbView = new ArticulosEmbolsarView(c);
+
+				frmSupermercado.dispose();   // esto cierra frame borrow
+				
+				
+			}
+		});
 		frmSupermercado.getContentPane().add(btnEnvioAlmacen, "cell 0 5");
 		frmSupermercado.setVisible(true);
 	}

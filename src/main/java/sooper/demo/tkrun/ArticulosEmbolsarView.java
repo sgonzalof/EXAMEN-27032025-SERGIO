@@ -8,7 +8,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JButton;
 
 
-
 public class ArticulosEmbolsarView {
 	
 
@@ -16,21 +15,15 @@ public class ArticulosEmbolsarView {
 	private JTable artEmbTable;
 	private DefaultTableModel tableModel;
 	
-	
-	
+
 	 public ArticulosEmbolsarView(ArticulosEmbolsarController c2) {
 			this.controller = controller;
 			initialize();
 			
 	} 
 
-
-
-
 	private void initialize() {
-		
-		
-		
+				
 		JFrame frmArtEmb = new JFrame();
 		frmArtEmb.setBounds(50, 50, 400, 500);	
 		frmArtEmb.getContentPane().setLayout(null);

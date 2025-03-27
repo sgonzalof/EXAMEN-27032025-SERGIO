@@ -14,9 +14,6 @@ import javax.swing.table.DefaultTableModel;
 
 import sooper.demo.tkrun.ArticulosEmbolsarController;
 import sooper.demo.tkrun.ArticulosEmbolsarModel;
-//import sooper.demo.run.ReturnController;
-//import library.demo.run.ReturnModel;
-//import library.demo.run.ReturnView;
 
 
 public class SupermercadoView {
@@ -32,12 +29,11 @@ public class SupermercadoView {
 	private DefaultTableModel modeloArticulo;
 	private DefaultTableModel modeloListaEmbolsados;
 	private ArticulosEmbolsarController c;
-	private ArticulosEmbolsarModel modArtEmb;
 
-	
+
 
 	 public SupermercadoView(SupermercadoController controlador) {
-		// TODO Auto-generated constructor stub
+
 		initialize(controlador);
 	} 
 
@@ -104,18 +100,12 @@ public class SupermercadoView {
 		btnEnvioAlmacen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				
-				
-
-	
-				
-				
-				
+								
 				ArticulosEmbolsarModel modArtEmb = new ArticulosEmbolsarModel();
 				ArticulosEmbolsarController conArtEmb = new ArticulosEmbolsarController(modArtEmb);
 				ArticulosEmbolsarView artEmbView = new ArticulosEmbolsarView(c);
 
-				frmSupermercado.dispose();   // esto cierra frame borrow
+				frmSupermercado.dispose();   // esto cierra frame supermercado
 				
 				
 			}

@@ -16,9 +16,4 @@ public class ArticulosEmbolsarController {
         this.view = view;
         }
 
-
-
-
-
-
 }

@@ -10,7 +10,7 @@ import javax.swing.JButton;
 
 public class ArticulosEmbolsarView {
 	
-
+	protected JFrame frmArtEmb;
 	private ArticulosEmbolsarController controller;
 	private JTable artEmbTable;
 	private DefaultTableModel tableModel;
@@ -26,6 +26,7 @@ public class ArticulosEmbolsarView {
 				
 		JFrame frmArtEmb = new JFrame();
 		frmArtEmb.setBounds(50, 50, 400, 500);	
+		frmArtEmb.setTitle("lkfadlfh");
 		frmArtEmb.getContentPane().setLayout(null);
 		
 		JLabel titleLabel = new JLabel("Articulos a Embolsar");
@@ -45,7 +46,12 @@ public class ArticulosEmbolsarView {
 		añadirArtBtn.setBounds(10, 427, 143, 23);
 		frmArtEmb.getContentPane().add(añadirArtBtn);
 
-		frmArtEmb.setVisible(true);
+		//frmArtEmb.setVisible(true);
 	
+	}
+
+	public Object getFrame() {
+
+		return this.frmArtEmb;
 	}
 }
